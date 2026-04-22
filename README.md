@@ -1,9 +1,11 @@
 ------------------------------
 ## NetworkMiner Forensic Bridge & HUD
+
 A C++ DLL + EXE designed to augment NetworkMiner with real-time UI scraping, an overlay HUD, and "Pivot" capabilities into Wireshark and TShark.
 
 ------------------------------
 ## Overview
+
 The Forensic Bridge acts as an intelligence layer sitting on top of NetworkMiner. It utilizes the Microsoft UI Automation API to programmatically "read" the data currently selected or visible within the NetworkMiner interface. This data is then displayed in a topmost HUD and can be instantly pivoted into deep-packet analysis tools with pre-generated filters.
 ## Key Features
 
@@ -15,6 +17,7 @@ The Forensic Bridge acts as an intelligence layer sitting on top of NetworkMiner
 
 ------------------------------
 ## Technical Architecture
+
 The project is structured as a multi-threaded Windows DLL:
 
    1. UI Thread: Manages the Win32 HUD window, button interactions, and the message loop.
@@ -23,17 +26,20 @@ The project is structured as a multi-threaded Windows DLL:
 
 ------------------------------
 ## Prerequisites
+
 * NetworkMiner (v3.1 recommended, if you want to change the version type, you'll need to edit the "dllmain.cpp").
 * Wireshark (Installed and added to your System PATH).
 * Windows 10/11 (Required for UI Automation Core).
 
 ## Installation
+
 (if you do not want to run my dll and want to compile yourself)
    1. Compile the source into a .dll (Architecture must match your NetworkMiner version, I chose Release x64).
    2. Place a folder into NetworkMiner's exe directory.
    3. Place into that folder the bridge_for_networkminer.dll, the network_miner_to_wireshark.exe, and the .pcap file that you wish to examine
 
 ## Environment Setup
+
 To use the TShark (CLI) feature, ensure the Wireshark directory is in your system environment variables:
 Control Panel > System > Advanced System Settings > Environment Variables > Path > New > C:\Program Files\Wireshark\
 ------------------------------
@@ -46,10 +52,12 @@ Control Panel > System > Advanced System Settings > Environment Variables > Path
 
 ------------------------------
 ## ⚠️ Safety & Compliance
+
 * Disclaimer: This tool is for authorized forensic analysis and educational purposes only.
 
 ------------------------------
 ## STARTING?
+
    1. Download the .exe, and .dll
    2. Place a folder into NetworkMiner's exe directory.
    3. Place into that folder the bridge_for_networkminer.dll, the network_miner_to_wireshark.exe, and the .pcap file that you wish to examine
