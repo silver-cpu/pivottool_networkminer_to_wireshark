@@ -42,6 +42,7 @@ The project is structured as a multi-threaded Windows DLL:
 
 To use the TShark (CLI) feature, ensure the Wireshark directory is in your system environment variables:
 Control Panel > System > Advanced System Settings > Environment Variables > Path > New > C:\Program Files\Wireshark\
+
 ------------------------------
 ## Usage: The HUD Interface
 
