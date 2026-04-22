@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="bridge_for_networkminer/bridge_for_networkminer.vcxproj" Id="84dbfd10-9f30-4c9c-8abd-d1dcc7b6429f" />
+</Solution>

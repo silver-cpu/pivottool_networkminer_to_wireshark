@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="network_miner_to_wireshark/network_miner_to_wireshark.vcxproj" Id="92d5b4f9-14fa-49a8-b2f8-0e633448e171" />
+</Solution>
